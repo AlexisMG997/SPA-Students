@@ -1,0 +1,11 @@
+.dashboard {
+  display: flex;
+  flex: content;
+  .smallDashboard {
+    flex-direction: column;
+    flex-wrap: initial;
+  }
+  .principalDashboard {
+    flex-direction: column;
+  }
+}
