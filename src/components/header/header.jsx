@@ -56,6 +56,7 @@ const Header = () => {
       <div id='responsive-menu' className="hidden md:hidden text-center">
         <a href="http://localhost:3000/" className="block py-3 px-4 text-sm hover:bg-gray-200">Dashboard</a>
         <a href="" className=" block py-3 px-4 text-sm hover:bg-gray-200">Calificaciones</a>
+        <a href="" className=" block py-3 px-4 text-sm hover:bg-gray-200">Cerrar Sesión</a>
       </div>
     </nav>
     /*content
