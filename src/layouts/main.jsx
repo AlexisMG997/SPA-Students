@@ -10,9 +10,8 @@ import AdminPanel from "../pages/admin/adminPanel";
 function Main() {
   return (
     <div>
-      <p>Navbar</p>
-      <Header></Header>
-      <Thumbnail></Thumbnail>
+      <Header/>
+      <Thumbnail/>
       <div className="content">
         <Routes>
           <Route exact path="/" element={<AdminPanel />} />

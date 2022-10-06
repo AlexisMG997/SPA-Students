@@ -19,7 +19,7 @@ export default class StudentCount extends Component {
 
   render(){
     return (
-      <div className='box-border h-fit w-128 p-4 border-4'>
+      <div className='box-border h-fit w-128 p-4 border-4 bg-gray-50'>
 
           <div className='text-lg font-normal text-center'>
             Estudiantes en el grupo 

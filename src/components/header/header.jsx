@@ -7,13 +7,9 @@ const Header = () => {
   const ref = useRef(null);
 
   useEffect(() => {
-    // 👇️ use a ref (best)
     const responsiveMenuBTN = ref.current;
     console.log(responsiveMenuBTN);
 
-    // 👇️ use document.querySelector()
-    // should only be used when you can't set a ref prop on the element
-    // (you don't have access to the element)
     const menu = document.querySelector('#responsive-menu')
     console.log(menu);
     responsiveMenuBTN.addEventListener('click', () => {
@@ -24,7 +20,7 @@ const Header = () => {
 
   return (
     // navbar here
-    <nav className="bg-gray-100">
+    <nav className="bg-gray-200">
       <div className="max-w-6xl mx-auto px-8">
 
         <div className="flex justify-between">
@@ -57,9 +53,9 @@ const Header = () => {
         </div>
       </div>
 
-      <div id='responsive-menu' className="hidden md:hidden">
-        <a href="" className="block py-2 px-4 text-sm hover:bg-gray-200">Estudiantes</a>
-        <a href="" className="block py-2 px-4 text-sm hover:bg-gray-200">Calificaciones</a>
+      <div id='responsive-menu' className="hidden md:hidden text-center">
+        <a href="http://localhost:3000/" className="block py-3 px-4 text-sm hover:bg-gray-200">Dashboard</a>
+        <a href="" className=" block py-3 px-4 text-sm hover:bg-gray-200">Calificaciones</a>
       </div>
     </nav>
     /*content

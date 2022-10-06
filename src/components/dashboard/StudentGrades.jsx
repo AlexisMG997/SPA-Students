@@ -38,7 +38,7 @@ export default class StudentGrades extends Component {
 
   return (
     
-    <div className='overflow-y-auto box-border h-90  w-62 p-4 border-4'>
+    <div className='overflow-y-auto box-border h-90  w-62 p-4 border-4 bg-gray-50 hidden md:block'>
 
       <div className='text-lg font-normal mb-5'>Lista de estudiantes</div>
 
