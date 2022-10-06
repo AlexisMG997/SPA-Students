@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminPanel from "./pages/admin/adminPanel";
+import Main from "./layouts/main";
 
-function App() {
-  return (
+/**
     <div className="App">
       <BrowserRouter>
         <Routes>
@@ -12,6 +12,11 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
+ */
+
+function App() {
+  return (
+    <Main></Main>
   );
 }
 

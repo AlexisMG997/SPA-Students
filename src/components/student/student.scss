@@ -1,0 +1,22 @@
+html,
+body {
+  background-color: #f3f3f3;
+}
+
+.activeTab {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+}
+
+.inactiveTab {
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+  border-color: transparent;
+}
+
+.inactiveTab:hover {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}

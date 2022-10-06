@@ -1,26 +1,37 @@
 import React from 'react'
-import axios from "axios";
-import { groupData } from '../../groupData'
+import { Component } from "react";
 
 
+export default class StudentCount extends Component {
+  
+  state = {
+    group: [],
+    stadistics: []
+  }
+  
+  async componentDidMount(){
+    const url = 'http://127.0.0.1:8000/api/grupo'
+    const response = await fetch(url)
+    const data = await response.json()
+    this.setState({group: data.data[0].grupo})
+    this.setState({stadistics: data.data[0].estadisticas})
+  }
 
-console.log(groupData.map((data) => data.estadisticas.alumnos))
-const totalStudent = groupData.map((data) => data.estadisticas.alumnos)
-const groupConcat = groupData.map((data) => data.grupo.cuatrimestre) + "'" +
-groupData.map((data) => data.grupo.grupo)
+  render(){
+    return (
+      <div className='box-border h-fit w-128 p-4 border-4'>
 
-function StudentCount() {
+          <div className='text-lg font-normal text-center'>
+            Estudiantes en el grupo 
+            {' ' + this.state.group.cuatrimestre + '*' + this.state.group.grupo}
+          </div>
 
-  return (
-    <div className='box-border h-fit w-128 p-4 border-4'>
-
-        <div className='text-lg font-normal text-center'>Estudiantes en el grupo {groupConcat}</div>
-
-        <div className='text-2xl text-center mt-3'>{totalStudent}</div>
-    
-    </div>
-    
-  )
+          <div className='text-2xl text-center mt-3'>
+            { this.state.stadistics.alumnos }
+          </div>
+      
+      </div>
+      
+    )
+  }
 }
-
-export default StudentCount
