@@ -33,8 +33,7 @@ export default class StudentEngCount extends Component {
           break;
         case 'C2': c2++
           break;
-        default: unclass++
-          break;
+
       }
       return [
         {'name' : 'A1', 'value' : a1},
@@ -42,8 +41,7 @@ export default class StudentEngCount extends Component {
         {'name' : 'B1', 'value' : b1},
         {'name' : 'B2', 'value' : b2},
         {'name' : 'C1', 'value' : c1},
-        {'name' : 'C2', 'value' : c2},
-        {'name' : 'Sin nivel', 'value' : unclass}
+        {'name' : 'C2', 'value' : c2}
       ]
     })
 
