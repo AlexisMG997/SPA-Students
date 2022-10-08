@@ -41,7 +41,7 @@ export default class StudentGenreCount extends Component {
     return (
       <div className="box-content h-70 w-64 p-4 border-4 bg-gray-50">
 
-        <div className='text-lg font-normal text-center'>Sexo de los estudiantes</div>
+        <div className='text-lg font-normal text-center'>Género de los alumnos</div>
 
           <PieChart width={400} height={300} margin={{ top: 0, right: 135, left: 0, bottom: 0 }}>
             <Pie

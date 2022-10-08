@@ -19,11 +19,9 @@ const Thumbnail = () => {
     getData();
   }, []);
 
-  var car1 = "Alexis";
-  var car2 = "Cristian";
   return (
     <>
-      <ul className="flex flex-row overflow-x-scroll space-x-6 bg-[#1B2631] pt-2 pl-5 pb-0">
+      <ul className="flex flex-row overflow-x-scroll space-x-6 bg-slate-800 pt-2 pl-5 pb-0">
         {data.map((dat, index) => {
           var name = dat.nombreCompleto;
           var nameSplitted = name.trim().split(/\s+/);
@@ -36,19 +34,17 @@ const Thumbnail = () => {
                 to={"/student/" + matriculaString}
               >
                 <img
-                  className=" h-20 w-20  rounded-full"
+                  className=" h-16 w-16  rounded-full"
                   src={dat.foto}
                   alt="cute kitten"
                 />
               </NavLink>
-            
               <NavLink
                 className="box text-white"
                 to={"/student/" + matriculaString}
               >
                 {nameSplitted[0] + " " + nameSplitted[1]}
               </NavLink>
-
             </li>
           );
         })}

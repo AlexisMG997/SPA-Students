@@ -3,20 +3,49 @@ body {
   background-color: #f3f3f3;
 }
 
-.activeTab {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-  border-color: rgb(37 99 235 / var(--tw-border-opacity));
-}
+// .activeTab {
+//   --tw-text-opacity: 1;
+//   color: rgb(37 99 235 / var(--tw-text-opacity));
+//   border-color: rgb(37 99 235 / var(--tw-border-opacity));
+// }
 
-.inactiveTab {
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-  border-color: rgb(243 244 246 / var(--tw-border-opacity));
-  border-color: transparent;
-}
+// .inactiveTab {
+//   color: rgb(107 114 128 / var(--tw-text-opacity));
+//   border-color: rgb(243 244 246 / var(--tw-border-opacity));
+//   border-color: transparent;
+// }
 
-.inactiveTab:hover {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
+// .inactiveTab:hover {
+//   --tw-text-opacity: 1;
+//   color: rgb(75 85 99 / var(--tw-text-opacity));
+//   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+// }
+
+// .content {
+//   background-color: white;
+//   padding: 20px;
+//   width: 100%;
+//   height: 100%;
+//   display: none;
+// }
+
+// .active-tabs {
+//   background: white;
+//   border-bottom: 1px solid transparent;
+// }
+
+// .active-tabs::before {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: -5px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: calc(100% + 2px);
+//   height: 5px;
+//   background: blue;
+// }
+
+// .active-content {
+//   display: block;
+// }
